@@ -1,6 +1,6 @@
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
 
-function fizzBuzz() {
+var fizzBuzz = () => {
   inquirer.prompt([{
     type: "number",
     message: "pick a number",
@@ -22,6 +22,6 @@ function fizzBuzz() {
     }
     fizzBuzz();
   });
-}
+};
 
 fizzBuzz();
